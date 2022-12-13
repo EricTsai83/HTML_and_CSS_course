@@ -1,0 +1,256 @@
+/* css reset: 清除瀏覽器所有預設格式(為了忠實呈現設計師的原稿)
+   http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ================== css reset =================== */
+
+
+
+
+
+/* 
+選擇器{
+	屬性: 設定值;
+	屬性: 設定值;
+} */
+h1{
+  color: blue;
+  font-size: 32px;
+}
+
+.style1{
+  color: black;
+  font-size: 16px;
+  font-family: Verdana;
+  line-height: 1.5;  /* 行距 font-size*1.5 */
+  text-align: left;  /* 文字靠左 */
+  text-indent: 32px;  /* 通常設 font-size 的兩倍 */
+  letter-spacing: 1px;  /* 字跟字的距離 */
+  width: 650px;  /* 區塊寬度 */
+  border-left: 5px solid red; /* 區塊邊界 solid: 實線 dashed:線條虛線 dotted: 圓點虛線 */
+  border-right: 5px solid orange;
+  border-top: 5px solid yellow;
+  border-bottom: 5px solid pink;
+}
+
+img{
+  border: 5px solid yellow;
+}
+
+a{
+  color: goldenrod;
+  background: gray;
+  display: block;  /* 將行內元素(inline)轉成區塊元素 */
+  width: 150px;
+  height: 35px;
+  
+}
+/* 擬態連結 */
+/* 當鼠標漂浮在上方時的效果設定 */
+a:hover{
+  color: red;
+  font-size: 30px;
+}
+/* 當滑鼠按著不放時的效果設定 */
+a:active{
+  color: pink
+}
+
+span{
+  color: palegreen;
+}
+
+
+/* 類別選擇器 */
+.grayText{
+  color: gray;
+}
+
+.lineThrough{
+  text-decoration: line-through;
+}
+
+
+.style2{
+  font-size: 30px;
+}
+
+.style2 a{
+  color: bisque;
+}
+
+
+.style2 .content{
+  font-weight: bold;
+}
+
+.box1{
+  margin:  30px;  /* 外部左邊留下空間 */
+  border: 5px solid blue;
+  width: 850px;
+  height: 200px;  /* 如果內容多寡不確定，通常不會寫死高度，讓版面自己適應 */ 
+  padding: 30px;  /* 內部內容四周留白 */
+  background-color: aqua;
+}
+
+/* .box p{
+  margin-bottom: 30px;
+} */
+
+.box2{
+  width: 300px;
+  padding: 50px;
+  border: 10px solid green;
+  margin: 50px;
+  
+}
+
+/* 這段語法可以當作每個網站必用的東西 */
+/* *,*:before,*:after{
+  box-sizing: border-box;
+} */
+
+.box3{
+  margin-left: auto;  /* 會先看父階層是誰，然後水平至中 */
+  margin-right: auto;
+  width: 300px;
+  box-sizing: border-box;  /* width 是多少，區塊就是多寬，不會受到 border 和 padding 的影響 */
+}
+
+.box3 .header{
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+.box3 .content{
+  background-color: pink;
+  padding: 30px;
+}
+.box3 .content p{
+  padding-bottom: 15px;
+}
+
+.box3 .footer{
+  text-align: center;
+  background-color: yellow;
+}
+
+/* 可以看出大於圖片的部分會自動重覆，這樣的好處是用戶端下載的圖片較小，網頁跑的也會比較快 */
+.box4 {
+  width: 600px;  /* 原圖片寬:30px */
+  height: 398px;  /* 圖片高 */
+  background-image: url(../img/background_part_cut.png);
+  border: 1px solid red;
+  /* background-repeat: no-repeat; */
+}
+
+
+
+.box5 {
+  width: 750px;  /* 原圖片寬:299px */
+  height: 300px;  /* 原圖片高:168px */
+  /* background-image: url(../img/logo.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-color: red; */
+background: url(../img/logo.png) right bottom no-repeat red;
+}
+
+
+/* 如果我今天這個區域我需要給 google 爬資料，
+   比如說他是 h1 下的 a 連結，但網頁呈現時我想用圖片代替，
+   那此時就可以用以下方法 */
+.box6 {
+  background-image: url(../img/logo.png);
+  width: 299px;
+  height: 168px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+
+.price th, .price td {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.price th {
+  padding: 10px;
+  background: green;
+  color: #fff;
+}
+
+.price td {
+padding: 10px;
+}
+
+.input{
+border: 3px solid blue;
+color: red;
+border-radius: 10px;
+background-color: #000;
+padding: 5px 10px;
+font-size: 16px;
+width: 250px;
+
+}
+
+.btn {
+background: green;
+color: #fff;
+border: 1px solid red;
+border-radius: 5px;
+padding: 10px 30px;
+cursor: pointer;
+width: 250px;
+}
+
+.btn:hover {
+  background: #000;
+}

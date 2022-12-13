@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 針對IE用最新的相容性，讓舊IE瀏覽器可以用 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- 根據不同裝置調整螢幕解析度用的 -->
+    <!-- 表示作者是誰，內容是啥 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>顯示在頁籤上</title>
+
+    <!-- 頁籤icon -->
+    <!-- 寬高必須 32px*32px的大小 -->
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <meta name="description" content="網站描述文字" />
+    <meta name="keywords" content="客戶, 找此網站, 有可能, 會搜尋, 的關鍵詞" />
+
+    <!-- 底下 og 都是有關 FB 的設定 -->
+    <!-- 如果貼此網站連結會帶的顯示資訊與圖片（專門 for facebook(meta)) -->
+    <meta property="og:title" content="連結附帶描述的標題" />
+    <meta property="og:description" content="FB的描述" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="FB上的網址" />
+    <meta property="og:image" content="FB的圖片" />
+
+    <!--熱鍵為link:css-->
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="JS檔案路徑"></script>
+  </head>
+  <body>
+    <h1>標題</h1>
+    <!--呈現圓圈列表-->
+    <ul>
+      <li>項目一</li>
+      <li>項目二</li>
+      <li>項目三</li>
+    </ul>
+    <!--呈現數字列表-->
+    <ol>
+      <li>項目一</li>
+      <li>項目二</li>
+      <li>項目三</li>
+    </ol>
+
+    <!-- target="_blank" 可以開分頁-->
+    <a target="_blank" title="Google" href="https://www.google.com">連到 google</a>
+    <p class="style1">
+      <!--熱鍵為 lorem10，數字可更改來增家/減少字數-->
+      這裡就是段落
+      <span>ipsum</span>, dolor sit amet consectetur adipisicing elit. Nobis voluptates earum aut accusantium. Quia,
+      illo, itaque rerum voluptatem cupiditate sequi officiis voluptates numquam repellat eos consequatur! Pariatur
+      alias amet ea.
+      <a target="_blank" href="https://www.youtube.com/">影片</a>
+    </p>
+    <p class="grayText lineThrough">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus praesentium consectetur aspernatur officiis?
+      Quis, quisquam? Quo accusamus ex omnis animi.
+    </p>
+    <!-- alt 屬性主要是提供給視障人士看時，可以讓機器把 alt 的內容讀出來-->
+    <img src="img/logo.png" alt="蛋黃哥" />
+
+    <div class="style2">
+      你好
+      <a href="#">喔齁</a>
+      <p class="content">嗯哼</p>
+    </div>
+
+    <div class="box1">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit blanditiis quod corporis perspiciatis eaque.
+        Accusantium quasi molestias, mollitia consequatur vel eligendi eos dolor. Itaque laborum fuga aut tempora
+        repellendus amet?
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit blanditiis quod corporis perspiciatis eaque.
+        Accusantium quasi molestias, mollitia consequatur vel eligendi eos dolor. Itaque laborum fuga aut tempora
+        repellendus amet?
+      </p>
+    </div>
+
+    <div class="box2">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit blanditiis quod corporis perspiciatis eaque.
+        Accusantium quasi molestias, mollitia consequatur vel eligendi eos dolor. Itaque laborum fuga aut tempora
+        repellendus amet?
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit blanditiis quod corporis perspiciatis eaque.
+        Accusantium quasi molestias, mollitia consequatur vel eligendi eos dolor. Itaque laborum fuga aut tempora
+        repellendus amet?
+      </p>
+    </div>
+
+    <div class="box3">
+      <div class="header">
+        <p>I am header</p>
+      </div>
+      <div class="content">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit blanditiis quod corporis perspiciatis eaque.
+          Accusantium quasi molestias, mollitia consequatur vel eligendi eos dolor. Itaque laborum fuga aut tempora
+          repellendus amet?
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit blanditiis quod corporis perspiciatis eaque.
+          Accusantium quasi molestias, mollitia consequatur vel eligendi eos dolor. Itaque laborum fuga aut tempora
+          repellendus amet?
+        </p>
+      </div>
+      <div class="footer">
+        <p>I am footer<br />您好</p>
+      </div>
+    </div>
+
+    <div class="box4"><h1>I am img background.</h1></div>
+    <div class="box5"></div>
+
+    <a class="box6" href="#">Hi~ 我是蛋黃哥！</a>
+
+    <div>
+      <table class="price">
+        <tr>
+          <th>title1</th>
+          <th>title2</th>
+          <th>title3</th>
+        </tr>
+        <tr>
+          <td>content1</td>
+          <td>content2</td>
+          <td>content3</td>
+        </tr>
+        <tr>
+          <td>content1</td>
+          <td>content2</td>
+          <td>content3</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- 這個做法會把 form 的資料帶到 url -->
+    <form action="index.html">
+      <label for="name">Name: </label>
+      <input type="text" id="name" placeholder="type name" name="name" />
+      <label for="mail">Mail: </label>
+      <input type="text" id="mail" placeholder="type mail" name="mail" />
+      <input type="submit" value="next step" />
+    </form>
+    <form action="index.html">
+      <input type="radio" name="sex" value="male" /> 男生 <input type="radio" name="sex" value="female" /> 女生
+    </form>
+    <form action="index.html">
+      <input type="checkbox" value="movie" name="hobby" /> 看電影
+      <input type="checkbox" value="music" name="hobby" /> 聽音樂
+      <input type="checkbox" value="comic" name="hobby" /> 看漫畫
+      <input type="submit" value="submit" />
+    </form>
+
+    <form action="index.html">
+      <label for="birth">生日</label>
+
+      <select name="birth" id="birth">
+        <option value="1900">1994</option>
+        <option value="1901">1998</option>
+      </select>
+    </form>
+
+    <form action="index.html">
+      <textarea name="content" id="" cols="30" rows="10"></textarea>
+      <br />
+      <input type="submit" value="send" />
+    </form>
+
+    <form action="index.html" class="input">
+      <input type="text" />
+    </form>
+
+    <form action="index.html" class="btn">
+      <input type="button" value="button click" />
+    </form>
+  </body>
+</html>
