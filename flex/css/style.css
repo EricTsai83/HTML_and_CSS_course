@@ -1,0 +1,194 @@
+/* ================css reset============== */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ================css reset============== */
+
+.container1 {
+  display: flex;
+  background: #004466;
+  /* w500 */
+  width: 500px;
+  /* m0-auto */
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.item1 {
+  width: 100px;
+  background: #00ffa2;
+  color: #004466;
+  font-size: 36px;
+  text-align: center;
+  margin: 10px;
+}
+
+.demarcation {
+  text-align: center;
+  margin: 10px;
+}
+
+.container2 {
+  display: flex;
+  width: 650px;
+  background: #004466;
+  margin: 0 auto;
+}
+
+.item2 {
+  background: #00ffa2;
+  color: #004466;
+  font-size: 36px;
+  text-align: center;
+  margin: 10px;
+}
+
+.num1 {
+  width: 150px;
+  height: 150px;
+}
+
+.num2 {
+  width: 200px;
+}
+
+.num3 {
+  width: 400px;
+}
+
+.container3 {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 500px;
+  background: #004466;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.item3 {
+  width: 100px;
+  background: #00ffa2;
+  color: #004466;
+  font-size: 36px;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.container4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 500px;
+  background: #004466;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.item4 {
+  width: 100px;
+  background: #00ffa2;
+  color: #004466;
+  font-size: 36px;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.menu1 {
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.menu1 li {
+  width: 100px;
+  text-align: center;
+  border: 1px solid #000;
+}
+
+.menu1 li a {
+  display: block;
+  background: #00ffa2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  color: #004466;
+}
+
+.menu1 li a:hover {
+  background: #004466;
+  color: #00ffa2;
+}
+
+.menu2 {
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu2 li {
+  width: 110px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.menu2 li a {
+  display: block;
+  background: #00ffa2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  color: #004466;
+}
+
+.menu2 li a:hover {
+  background: #004466;
+  color: #00ffa2;
+}
