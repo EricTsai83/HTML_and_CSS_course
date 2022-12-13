@@ -1,0 +1,35 @@
+.box1 {
+  width: 150px;
+  height: 150px;
+  background: #000;
+  border-radius: 50px 0 50px 0;
+}
+
+
+.box2 {
+  width: 150px;
+  height: 150px;
+	line-height: 150px;  /* 設定跟高度一樣，可以讓文字垂直置中 */
+  background: #000;
+  border-radius: 50%;
+	border: 10px solid blue;
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+}
+
+.box3 {
+	width: 1002px;
+	height: 405px;
+	/* background: linear-gradient(#00644b, #009771); */
+	background: -webkit-linear-gradient(left, red, yellow);  /* 因為 css3 是較新的規範，所以可能有一些瀏覽器沒有支援，所以要指定瀏覽器會比較保險 */
+
+}
+
+
+.box4 {
+width: 200px;
+height: 200px;
+background: green;
+box-shadow: 5px 5px 15px gray;  /* x軸, y軸, 擴散效果, 顏色 */
+}
